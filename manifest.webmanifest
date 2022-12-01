@@ -1,0 +1,18 @@
+{
+    "short_name": "WikiGirls",
+    "name": "WikiGirls.com - As Meninas Malvadas",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#731F5C",
+    "theme-color": "#731F5C",
+    "background_color": "#731F5C",
+    "background-color": "#731F5C",
+    "description": "Um lugarzinho para saber mais de seus filmes favoritos",
+    "icons": [
+        {
+            "src": "img/logo/logo512px.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

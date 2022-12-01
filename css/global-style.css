@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root{
+     --rosaClaro: #F2C2CF;
+     --rosaNude: #F2B694;
+
+     --roxoClaro: #BF4E83;
+     --roxoEscuro: #731F5C;
+
+     --cinzaClaro: #EAE8EB;
+     --cinza: #a2a2a2;
+     --branco: #FFFFFF;
+     --preto: #000000;
+     --escuro: #00000029;
+
+     --amarelo: #F3D500;
+
+}
+
+body{
+     padding: 0;
+     margin: 0;
+     font-family: 'Raleway', sans-serif;
+}
+
+.menu{
+     font-size: 20px;
+}
+.btt{
+     height: 35px;
+}
+
+.topnav {
+     overflow: hidden;
+     background-color:  var(--roxoClaro);
+     display: flex;
+     height: 50px;
+     justify-content: space-between;
+     
+}
+
+.topnav a {
+     float: left;
+     color: var(--branco);
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 19px;
+     font-family: 'Poppins', sans-serif;
+     transition: 0.5s;
+}
+
+.topnav a:hover {
+     background-color: var(--rosaClaro);
+}
+
+.topnav a.active {
+     background-color: var(--roxoEscuro);
+     color: var(--branco);
+}
+
+.search-container{
+     display: flex;
+     flex-direction: row;
+     justify-items: flex-end;
+     padding: 8px;
+     width: 250px;
+     height: 25px;
+}
+
+.topnav input[type=text] {
+     border: none;
+     font-size: 17px;
+     height: 33px;
+}
+.topnav .search-container button {
+     border: none;
+     background: var(--roxoEscuro);
+     color: var(--branco);
+     padding: 10px;
+     cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+     background: var(--rosaClaro);
+}
+
+@media screen and (max-width: 600px) {
+     .topnav .search-container {
+          float: none;
+     }
+     .topnav a, .topnav input[type=text], .topnav .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+     }
+     .topnav input[type=text] {
+     border: 1px solid #000000;  
+     }
+}
+
+
+@media screen and (max-height:1025px) {
+    
+}
+
+
+@media screen and (max-height:769px) {
+  
+}
+
+
+@media screen and (max-height:325px) {
+  
+}
