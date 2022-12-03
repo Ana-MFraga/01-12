@@ -1,7 +1,6 @@
 @import url(global-style.css);
 
 .main{
-
      display: flex;
      flex-flow: column wrap;
      background-color: var(--rosaClaro);
@@ -61,7 +60,7 @@ a{
 .desc{
      display: flex;
      gap: 15px;
-     width: 80vw;
+     width: 90vw;
      margin: 20px;
      max-height: fit-content;
      overflow: hidden;
@@ -80,13 +79,13 @@ a{
      color: var(--roxoClaro);
 }
 .desc-img{
-     width: 300px;
+     width: 450px;
 }
 
 
 
 @media screen and (max-height:1025px) {
-    
+
 }
 
 
