@@ -126,38 +126,48 @@ a{
      .main{
           background-color: black;
      }
+
+     .title{
+          font-size: 20px;
+     }
      
      .cards{
-          width: 100px;
-          height: 150px;
+          width: 75px;
+          height: 100px;
+     }
+     .cards p{
+          font-size: 8px;
      }
      .cards:hover{
-          box-shadow: 6px 6px var(--rosaClaro);
+          box-shadow: 3px 3px var(--rosaClaro);
      }
      .card-img{
-          width: 98px;
+          width: 73px;
      }
 
      .card-box{
-          width: 550px;
-          padding: 15px 0;
-          border-radius: 30px;
+          width: 370px;
+          border-radius: 18px;
+          gap: 8px;
      }
 
 
      .desc{
           display: flex;
           width: 65vw;
-          margin: 20px;
-          border-radius: 10px 90px 10px; /* top - right - bottom - left*/
+          margin: 10px;
+          border-radius: 5px 35px 5px; /* top - right - bottom - left*/
      }
      .text{
-          font-size: 15px;
+          font-size: 7.5px;
      }
      .text-title{
-          font-size: 25px;
+          font-size: 13px;
      }
      .desc-img{
-          width: 305px;
+          width: 180px;
+     }
+     .desc-box{
+          gap: 10px;
      }
 }

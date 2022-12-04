@@ -166,5 +166,20 @@ body{
 
 
 @media screen and (max-height:325px) {
+     .topnav .menu a {
+          font-size: 13px;
+     }
+     .topnav input[type=text] {
+          font-size: 13px;
+          height: 25px;
+     }
+     .topnav .search-container button{
+          font-size: 13px;
+          height: 27.4px;
+          padding: 6px;
+     }
 
+     .nav_btt .bar{
+          height: 2px;
+     }
 }
