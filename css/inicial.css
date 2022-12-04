@@ -88,35 +88,38 @@
   @media screen and (max-height:325px) {
 
     .center{
-      margin: 10px auto;
-      width: 65vw;
+      margin: 0 auto;
+      width: 50vw;
+      justify-content: center;
     }
 
     .img-center{
       width: 400px;
     }
     .center h3{
-        font-size: 25px;
+        font-size: 20px;
     }
     .center .parag{
       font-weight: bold;
-      font-size: 13px;
+      font-size: 10px;
     }
 
-
+    .box{
+      padding: 10px 70px;
+    }
 
     .texto{
-      width: 200px;
+      width: 180px;
       padding: 20px;
     }
   
     .parag{
-      font-size: 13px;
+      font-size: 10px;
       margin-bottom: 30px;
     }
   
     .icon-parag{
       padding: 20px;
-      font-size: 30px;
+      font-size: 15px;
     }
 }
