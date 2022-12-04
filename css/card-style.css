@@ -85,15 +85,52 @@ a{
 
 
 @media screen and (max-height:1025px) {
+     .cards{
+          width: 100px;
+          height: 150px;
+     }
+     .cards:hover{
+          box-shadow: 6px 6px var(--rosaClaro);
+     }
+     .card-img{
+          width: 98px;
+     }
 
+     .card-box{
+          width: 45%;
+          padding: 15px 0;
+          border-radius: 30px;
+     }
+
+
+     .desc{
+          display: flex;
+          width: 65vw;
+          margin: 20px;
+
+          border-radius: 20px 100px 20px; /* top - right - bottom - left*/
+     }
+     .text{
+          padding: 0 30px;
+          font-size: 15px;
+          color: var(--cinza);
+     }
+     .text-title{
+          font-size: 25px;
+          font-weight: bold;
+          color: var(--roxoClaro);
+     }
+     .desc-img{
+          width: 320px;
+     }
 }
 
 
 @media screen and (max-height:769px) {
-  
+
 }
 
 
 @media screen and (max-height:325px) {
-  
+
 }
