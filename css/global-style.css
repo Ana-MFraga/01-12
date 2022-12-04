@@ -39,7 +39,7 @@ body{
      box-sizing: border-box;
 }
 
-.topnav a {
+.topnav .menu a {
      float: left;
      color: var(--branco);
      text-align: center;
@@ -50,19 +50,19 @@ body{
      transition: 0.5s;
 }
 
-.topnav a:hover {
+.topnav .menu a:hover {
      background-color: var(--rosaClaro);
 }
 
-.topnav a.active {
+.topnav .menu a.active {
      background-color: var(--roxoEscuro);
      color: var(--branco);
 }
 
 .nav_btt{
-     display: flex;
+     display: none;
      position: absolute;
-     top: 1.3rem;
+     top: 0.8rem;
      right: 1rem;
      flex-direction: column;
      justify-content: space-between;
@@ -75,6 +75,9 @@ body{
      background-color: var(--branco);
      border-radius: 10px;
      transition: 0.5s;
+}
+.nav_btt .bar a:hover{
+     background: none;
 }
 
 
@@ -105,31 +108,67 @@ body{
      background: var(--rosaClaro);
 }
 
-@media screen and (max-width: 600px) {
-     .topnav .search-container {
-          float: none;
-     }
-     .topnav a, .topnav input[type=text], .topnav .search-container button {
-          float: none;
-          display: block;
-          text-align: left;
-          width: 100%;
-          margin: 0;
-          padding: 14px;
-     }
-     .topnav input[type=text] {
-     border: 1px solid #000000;  
-     }
-}
-
-
 @media screen and (max-height:1025px) {
-    
+
 }
 
 
 @media screen and (max-height:769px) {
-  
+     .nav_btt{
+          display: flex;
+     }
+     .menu{
+          display: none;
+          width: 100%;
+
+          /* Parte para a animação */
+          display: block;
+          position: absolute; /*Fica em cima de qualquer outro elemento do site*/
+          width: 100%; /*Ocupa toda a tela*/
+          top: 50px;
+          background: var(--roxoClaro);
+          z-index: 1000; /*Garante que esse elemento vai ficar por cima dos outros, a não ser que algum elemento possua z-index de 10.000*/
+          height: 0;  /*Começa como 0 para a animação funcionar*/
+          transition: 0.6s; /*Qualquer mudança de elemento vai ter uma transição de 0.6s*/
+          visibility: hidden; /*Para a transição funcionar, o elemento precisa existir, portanto não se pode o display: none, trocando para o visibility: hidden*/
+          overflow-y: hidden; 
+          /*overflow-y > y = altura
+          overflow: hidden > Quando ultrapassa o elemento, ele não fica visível, nesse caso se utiliza para que a animação fique mais fluída, e os elementos só aparecem quando a altura estiver certa para eles (por isso o y) */        
+     }
+     .topnav.active .menu{
+          height: calc(100vh - 50px); 
+          /*vh > viewport height = o tamanho da tela
+          O espaçamento normal seria = a altura + 60px(definido pelo top), para impedir isso, utiliza-se um cálculo > calc(calculo);
+          */
+          visibility: visible; /*Visível*/
+          overflow-y: auto;
+          /*overflow: auto > Cria uma barra de scroll para quando existirem itens fora de vista*/
+     }
+     .menu{
+          display:flex;
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+     }
+
+
+     /* Animação do X */
+    #top, #bottom{ /* Colocando o ponto de origem da primeira e ultima linha como na esquerda */
+          transform-origin: left;
+     }
+
+     .topnav.active .nav_btt #center{
+          transition: 0.5s;
+          opacity: 0; /* Regula a opacidade do elemento */
+     }
+     .topnav.active .nav_btt #top{
+          transition: 0.5s;
+          transform: rotate(41deg);
+     }
+     .topnav.active .nav_btt #bottom{
+          transition: 0.5s;
+          transform: rotate(-41deg);
+     }
 }
 
 
