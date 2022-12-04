@@ -1,4 +1,4 @@
-const cacheName = 'Testev1'
+const cacheName = 'Kiwiki'
 
 self.addEventListener('install', function(event){
     event.waitUntil(
