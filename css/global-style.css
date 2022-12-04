@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+@import url(card-style.css);
+@import url(estilo.css);
+@import url(inicial.css);
+@import url(videos.css);
+
 :root{
      --rosaClaro: #F2C2CF;
      --rosaNude: #F2B694;
